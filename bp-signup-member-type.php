@@ -130,7 +130,7 @@ class BP_Signup_Member_Type {
         if ( ! function_exists( 'buddypress' ) ) {
             deactivate_plugins( plugin_basename( __FILE__ ) );
             wp_die( sprintf(
-                __( 'BP Signup Member Type at least BuddyPress version %1$s. You do not have BuddyPress installed.', 'bp-signup-member-type' ),
+                __( 'BP Signup Member Type requires at least BuddyPress version %1$s. You do not have BuddyPress installed.', 'bp-signup-member-type' ),
                 $v['bp_version']
             ) );
         } else {
@@ -225,7 +225,7 @@ class BP_Signup_Member_Type {
         <?php checked( true, array_key_exists( $k, $allow ) ); ?>
     />
     <label for="<?php print self::prefix . 'types_at_signup[' . esc_attr__( $k ) . ']'; ?>">
-        <?php esc_html_e( $obj->labels['name'] ); ?>
+        <?php print esc_html( $obj->labels['name'] ); ?>
     </label>
 </li>
 <?php
@@ -337,7 +337,7 @@ class BP_Signup_Member_Type {
      * Processes the signup form's member types setting.
      */
     public static function bp_complete_signup () {
-        if ( ! isset( $_POST['bp_smt_member_type'] ) ) {
+        if ( ! isset( $_POST[ self::prefix . 'member_type' ] ) ) {
             return;
         }
 
