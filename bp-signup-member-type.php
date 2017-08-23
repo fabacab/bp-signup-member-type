@@ -7,7 +7,7 @@
  * * Plugin Name: BP Signup Member Type
  * * Plugin URI: https://github.com/meitar/bp-signup-member-type
  * * Description: Automatically assign a BuddyPress member type during registration.
- * * Version: 0.1
+ * * Version: 0.1.1
  * * Author: Meitar Moscovitz <meitarm+wordpress@gmail.com>
  * * Author URI: https://maymay.net/
  * * License: GPL-3.0
@@ -81,7 +81,8 @@ class BP_Signup_Member_Type {
      * Registers primary functionality, initializing plugin hooks.
      */
     public static function initialize () {
-        if ( ! empty( bp_get_member_types() ) && bp_get_option( 'users_can_register' ) ) {
+        $member_types = bp_get_member_types();
+        if ( ! empty( $member_types ) && bp_get_option( 'users_can_register' ) ) {
             add_action( 'bp_register_admin_settings', array( __CLASS__, 'bp_register_admin_settings' ) );
             add_action( 'bp_before_registration_submit_buttons', array( __CLASS__, 'bp_before_registration_submit_buttons' ) );
             add_action( 'bp_complete_signup', array( __CLASS__, 'bp_complete_signup' ) );

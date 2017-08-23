@@ -3,8 +3,8 @@ Contributors: meitar
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TJLPJYXHSRBEE&lc=US&item_name=BP%20Signup%20Member%20Type&item_number=bp-signup-member-type&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 Tags: BuddyPress, members, member type, administration, users, management, signup, registration, customization
 Requires at least: WordPress 4.4 / BuddyPress 2.8
-Tested up to: 4.7
-Stable tag: 0.1
+Tested up to: 4.8
+Stable tag: 0.1.1
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -48,6 +48,9 @@ As the name implies, your BuddyPress website must have some code that registers 
 Unfortunately, BuddyPress's default user interface only displays the very first member type assigned to a user, even though plugin and theme code can detect multiple member types assigned to a single user. This is a known issue and is currently being worked on, but it's being done on a volunteer basis. If this is important to you, please consider [donating](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TJLPJYXHSRBEE&lc=US&item_name=BP%20Signup%20Member%20Type&item_number=bp-signup-member-type&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) to help resource this work!
 
 == Changelog ==
+
+= 0.1.1 =
+* Fix activation error on old versions of PHP.
 
 = 0.1 =
 * Initial public release.
