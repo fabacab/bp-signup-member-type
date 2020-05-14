@@ -5,11 +5,9 @@
  * WordPress plugin header information:
  *
  * * Plugin Name: BP Signup Member Type
- * * Plugin URI: https://github.com/meitar/bp-signup-member-type
+ * * Plugin URI: https://github.com/fabacab/bp-signup-member-type
  * * Description: Automatically assign a BuddyPress member type during registration.
  * * Version: 0.1.1
- * * Author: Meitar Moscovitz <meitarm+wordpress@gmail.com>
- * * Author URI: https://maymay.net/
  * * License: GPL-3.0
  * * License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
  * * Text Domain: bp-signup-member-type
