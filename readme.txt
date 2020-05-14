@@ -1,5 +1,5 @@
 === BP Signup Member Type ===
-Contributors: meitar
+Contributors: maymay
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=TJLPJYXHSRBEE&lc=US&item_name=BP%20Signup%20Member%20Type&item_number=bp-signup-member-type&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 Tags: BuddyPress, members, member type, administration, users, management, signup, registration, customization
 Requires at least: WordPress 4.4 / BuddyPress 2.8
